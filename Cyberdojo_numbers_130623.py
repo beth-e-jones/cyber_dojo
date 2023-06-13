@@ -3,7 +3,7 @@ import pandas as pd
 from statistics import mean
 
 
-number_sequence = [6, 9, 15, -2, 92, 11,232,-23]
+number_sequence = [6, 9, 15, -2, 92, 11,232,-233]
 meanval = mean(number_sequence)
 length = len(number_sequence)
 minval = min(number_sequence)
