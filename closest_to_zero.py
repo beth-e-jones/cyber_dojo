@@ -1,26 +1,32 @@
-#Given a list of integers find the closest to zero.
-#If there is a tie, choose the positive value.
+"""Given a list of integers find the closest to zero.
+If there is a tie, choose the positive value."""
 
 # %%
-""" Route one option - just finds min and prints it. 
-Need function solution later"""
-list_numbers = [11, -4, 3, 5, 235, 8]
+#Input list of numbers
+list_numbers = [11, -3, 2, -5, 235, -93, 8]
+
 
 # %%
-# define smallest number as the minimum
-smallest_number = min(list_numbers)
+# Calculate the difference between number and zero with absolute values
+abs_distance = [abs(number) for number in list_numbers]
+print(abs_distance)
 
 # %%
-""" This doesn't prioritise positive numbers over negative. Needs fix"""
+# Identify which value is closest to zero based on absolute distance
+smallest_distance = min(abs_distance)
+print(smallest_distance)
 
 # %%
-for int in list_numbers:
-    if smallest_number < 0:
-        smallest_number = (smallest_number * -1)
-
-print(smallest_number)
+# Identify where in the index the integer closest to zero is
+smallest_distance_index = abs_distance.index(smallest_distance)
+# Set  this index position as variable
+print(smallest_distance_index)
 
 # %%
-# print result
-print(f"The closest number to zero is {smallest_number}")
+# Find the corresponding index position in the original list of numbers
+closest_to_zero = list_numbers[smallest_distance_index]
+
+# Print value closest to zero
+print(f"The closest number to zero is {closest_to_zero}")
+
 # %%
