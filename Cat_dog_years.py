@@ -13,14 +13,16 @@
 #+9 dog years for second year
 #+5 dog years for each year after that
 
+# Create input to categorise pet (input means people write into terminal)
 pet = input("Is your pet a cat or dog?")
 
 if pet == "dog":
     DogAge = input("What is the age of your dog?")
+    # Classifies the input text as an integer 
     DogAge = int(DogAge)
     print(f"The age of your dog in human years is {DogAge}")
     if DogAge == 1:
-        print (DogAge + 14) 
+        print (DogAge + 14) # Calculates dog age and presents it
     elif DogAge == 2:
         print (f"The age of your dog in dog years is {DogAge + 22}")
     else:

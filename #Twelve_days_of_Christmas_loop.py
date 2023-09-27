@@ -17,9 +17,10 @@ christmas_gifts = {"1st": "a partridge in a pear tree",
 
 previous_gifts = []
 
-#this is an f string where you can add the key value pairs for dictionary inro a string
+#this is an f string where you can add the key value pairs for dictionary into a string
 for day, gift in christmas_gifts.items(): #if you were just doing the keys or values you'd do .keys or .values 
        #but because it's both you do .items
+       # Print f string to include day, then gift
        print(f"on the {day} of Christmas my true love gave to me, {gift + ', ' + ', '.join(reversed(previous_gifts))}")
        previous_gifts.append(gift) #adds the extra stuff every time
 
