@@ -8,8 +8,10 @@ list_numbers = [11, -3, 2, -5, 235, -93, 8]
 
 # %%
 # Calculate the difference between number and zero with absolute values
-# Code for line 12 came from an example provided by "Thefourtheye" in
+"""Code for line 12 came from an example provided by "Thefourtheye" in
 # https://stackoverflow.com/questions/20832769/how-to-obtain-the-absolute-value-of-numbers
+[Accessed 26th September 2023]
+"""
 
 abs_distance = [abs(number) for number in list_numbers]
 print(abs_distance)
