@@ -1,4 +1,4 @@
-def fizzbuzz(iterable_range=(1,100),number_1=3, number_2=5, empty_string=""):
+def fizzbuzz(iterable_range=range(1,6),number_1=3, number_2=5, empty_string=""):
     for fizzbuzz in iterable_range:
         #empty_string = ""
         if fizzbuzz % (number_1) == 0:
