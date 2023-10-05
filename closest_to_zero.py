@@ -33,5 +33,3 @@ closest_to_zero = list_numbers[smallest_distance_index]
 
 # Print value closest to zero
 print(f"The closest number to zero is {closest_to_zero}")
-
-# %%
