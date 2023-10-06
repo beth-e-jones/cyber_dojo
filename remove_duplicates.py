@@ -9,17 +9,16 @@ from list. Here are some examples:
 
 Author: Ramya V, KGISL
 """ 
-number_list = [2, 2, 3, 5, 7, 7, 8]
-def duplicate_removal:
+
+# Define function and set original number list
+def duplicate_removal(number_list = [2, 2, 3, 5, 7, 7, 8]):
+    # create empty list to append into
+    empty_list=[]
     for i in number_list:
-        empty_list=[]
-        
-        if i in
+        if i not in empty_list:
+            empty_list.append(i)
+            
+    print(empty_list)
 
-
-duplicate_removal() 
-
-# import initial list
-# create blank list
-# move stuff into blank list
-# if it alreayd exists in list, move over it?
+#Now function been defined, running it will return it    
+duplicate_removal()
